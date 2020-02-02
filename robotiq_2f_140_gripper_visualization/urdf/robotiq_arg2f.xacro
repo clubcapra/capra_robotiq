@@ -1,5 +1,8 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find robotiq_2f_140_gripper_visualization)/urdf/robotiq_arg2f.gazebo" />
+
   <xacro:macro name="robotiq_arg2f_base_link" params="prefix">
     <link name="${prefix}robotiq_arg2f_base_link">
       <inertial>
